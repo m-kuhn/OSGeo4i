@@ -10,4 +10,6 @@ before_install:
   - brew install automake cmake qt
 
 script:
+  - qmake --version
+  - which qmake
   - ./distribute -mqgis

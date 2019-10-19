@@ -1,0 +1,13 @@
+language: c
+
+os:
+  - osx
+
+osx_image: xcode11.2
+
+before_install:
+  - brew update
+  - brew install automake cmake qt
+
+script:
+  - ./distribute -mqgis
